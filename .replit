@@ -1,0 +1,16 @@
+modules = ["nodejs-20", "web", "nix"]
+hidden = [".config", "package-lock.json"]
+run = "npm run dev"
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix", "package.json", "package-lock.json"]
+
+[nix]
+channel = "stable-24_05"
+
+[unitTest]
+language = "nodejs"
+
+[[ports]]
+localPort = 3000
+externalPort = 80
